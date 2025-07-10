@@ -1,0 +1,255 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootCoordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Main vertical layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <RelativeLayout
+            android:id="@+id/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:paddingVertical="@dimen/dim_12">
+
+            <ImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="@dimen/dim_40"
+                android:layout_marginStart="@dimen/dim_12"
+                android:layout_height="@dimen/dim_40"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_user" />
+
+            <TextView
+                android:id="@+id/tvHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/poppins_medium"
+                android:lineSpacingExtra="@dimen/dim_4"
+                android:text="Dial"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dim_16"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:queryHint="Search Here"
+                android:layout_alignParentEnd="true"
+                android:iconifiedByDefault="true"
+                android:layout_alignParentTop="true"
+                />
+        </RelativeLayout>
+
+
+
+        <!-- Tabs -->
+        <LinearLayout
+            android:id="@+id/tabContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp">
+
+            <LinearLayout
+                android:id="@+id/layoutTabAll"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tabAll"
+                    android:text="All"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp" />
+
+                <View
+                    android:id="@+id/indicatorAll"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimary"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutTabMissed"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tabMissed"
+                    android:text="Missed"
+                    android:textColor="@color/gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp" />
+
+                <View
+                    android:id="@+id/indicatorMissed"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimary"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="12dp" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llKeyPad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Phone number display -->
+            <EditText
+                android:id="@+id/tvPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/edittext_background"
+                android:textColor="@color/black"
+                android:padding="12dp"
+                android:gravity="start|center_vertical"
+                android:hint="Enter phone number" />
+
+
+            <!-- Keypad -->
+            <GridLayout
+                android:id="@+id/keypad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:layout_margin="16dp">
+
+                <!-- Digits -->
+                <Button android:id="@+id/btn1" android:text="1\n○○" style="@style/DialerButton"/>
+                <Button android:id="@+id/btn2" android:text="2\nABC" style="@style/DialerButton"/>
+                <Button android:id="@+id/btn3" android:text="3\nDEF" style="@style/DialerButton"/>
+                <Button android:id="@+id/btn4" android:text="4\nGHI" style="@style/DialerButton"/>
+                <Button android:id="@+id/btn5" android:text="5\nJKL" style="@style/DialerButton"/>
+                <Button android:id="@+id/btn6" android:text="6\nMNO" style="@style/DialerButton"/>
+                <Button android:id="@+id/btn7" android:text="7\nPQRS" style="@style/DialerButton"/>
+                <Button android:id="@+id/btn8" android:text="8\nTUV" style="@style/DialerButton"/>
+                <Button android:id="@+id/btn9" android:text="9\nWXYZ" style="@style/DialerButton"/>
+                <Button android:id="@+id/btnStar" android:text="*\n" style="@style/DialerButton"/>
+                <Button android:id="@+id/btn0" android:text="0\n+" style="@style/DialerButton"/>
+                <Button android:id="@+id/btnHash" android:text="#\n" style="@style/DialerButton"/>
+            </GridLayout>
+
+            <!-- Call Buttons -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dim_10">
+
+                <Button
+                    android:id="@+id/btnSim1"
+                    android:text="SIM 1"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/dim_14"
+                    android:layout_marginEnd="@dimen/dim_14"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#4CAF50"
+                    android:textColor="#FFFFFF"
+                    android:drawableLeft="@drawable/baseline_local_phone_24"
+                    android:drawablePadding="8dp" />
+
+                <Button
+                    android:id="@+id/btnSim2"
+                    android:text="SIM 2"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/dim_16"
+                    android:layout_marginEnd="@dimen/dim_14"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#4CAF50"
+                    android:textColor="#FFFFFF"
+                    android:drawableLeft="@drawable/baseline_local_phone_24"
+                    android:drawablePadding="8dp" />
+
+
+                <ImageView
+                    android:id="@+id/ivClose"
+                    android:layout_width="@dimen/dim_42"
+                    android:layout_height="@dimen/dim_42"
+                    android:src="@drawable/baseline_close_24"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btnAddLeads"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim_26"
+                android:layout_marginEnd="@dimen/dim_26"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/dim_70"
+                android:gravity="center"
+                android:paddingVertical="8dp"
+                android:backgroundTint="#4CAF50"
+                android:background="#4CAF50"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/baseline_add_24"
+                    android:layout_marginEnd="8dp"
+                    app:tint="@android:color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Leads"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Floating Action Button (FAB) to show keypad -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabShowKeypad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/dial_pad"
+        app:tint="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="@dimen/dim_20"
+        android:layout_marginBottom="@dimen/dim_80"
+        app:backgroundTint="@color/green"
+        android:visibility="visible" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

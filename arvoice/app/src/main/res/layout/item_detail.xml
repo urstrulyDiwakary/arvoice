@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/llMain"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+    <ImageView
+        android:id="@+id/iconCallType"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/sim1"
+        android:layout_marginEnd="12dp"
+        android:contentDescription="call icon"
+        app:tint="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvType"
+            android:textStyle="bold"
+            android:text="Outgoing"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <!-- ✅ Add SIM info below number -->
+        <TextView
+            android:id="@+id/tvDuration"
+            android:textSize="12sp"
+            android:textColor="#777777"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:drawablePadding="@dimen/dim_8" />
+</LinearLayout>

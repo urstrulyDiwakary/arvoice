@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "169137875783",
+    "project_id": "arvoice-7273b",
+    "storage_bucket": "arvoice-7273b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169137875783:android:7691c7149d6c7c3d443a62",
+        "android_client_info": {
+          "package_name": "com.arvoice"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyABplzmC0qzSJB1hbuSPJ7T9v-AoSLew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

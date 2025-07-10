@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ARVOICE</string>
+    <string name="forgot_password"><u>Forgot Password</u></string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="add_lead">Add Lead</string>
+    <string name="title_lead">Leads</string>
+    <string name="title_site_visit">Site Visits</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_setting">Settings</string>
+    <string name="title_dialer">Dialer</string>
+    <string name="str_sim_card_manager">SIM Card Manager</string>
+    <string name="str_block_list">Block List</string>
+    <string name="str_manual_call_sync">Manual Call Sync</string>
+    <string name="str_user_details">User Details</string>
+    <string name="str_remote_support">Remote Support</string>
+    <string name="str_logout">Logout</string>
+    <string name="how_does_it_work">How does it work?</string>
+    <string name="when_enabled_all_incoming_and_outgoing_call_history_will_sync_with_your_crm_for_a_specific_contact">• When ENABLED, all incoming and outgoing call history will sync with your CRM for a specific contact.</string>
+    <string name="edit">EDIT</string>
+    <string name="dial">Dial</string>
+</resources>
