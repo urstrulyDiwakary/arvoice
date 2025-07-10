@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filter"
+                android:textSize="@dimen/dim_16"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="8dp" />
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_close_24"/>
+        </RelativeLayout>
+
+        <!-- Status Filter -->
+        <TextView
+            android:layout_marginTop="@dimen/dim_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dim_16"
+            android:paddingTop="8dp" />
+
+        <CheckBox
+            android:layout_marginTop="@dimen/dim_16"
+            android:id="@+id/checkbox_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open" />
+
+        <CheckBox
+            android:id="@+id/checkbox_overdue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Overdue" />
+
+        <CheckBox
+            android:id="@+id/checkbox_closed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Closed" />
+
+        <!-- Date Filter -->
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="@dimen/dim_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:paddingTop="16dp" />
+
+        <Spinner
+            android:layout_marginTop="@dimen/dim_16"
+            android:id="@+id/date_spinner"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- User Filter -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dim_16"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:layout_marginTop="@dimen/dim_16"
+            android:id="@+id/checkbox_select_all"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:text="Select All"
+            android:layout_marginBottom="8dp" />
+
+        <ListView
+            android:id="@+id/user_list"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:choiceMode="multipleChoice"
+            android:visibility="gone"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp" />
+
+        <!-- Apply Filter Button -->
+        <Button
+            android:id="@+id/btn_apply_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apply Filter"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

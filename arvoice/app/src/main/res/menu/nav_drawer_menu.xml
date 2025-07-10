@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_user_details" android:title="@string/str_user_details"  />
+    <item android:id="@+id/nav_sim_card_manager" android:title="@string/str_sim_card_manager"  />
+<!--    <item android:id="@+id/nav_blocklist" android:title="@string/str_block_list"  />-->
+<!--    <item android:id="@+id/nav_manual_call_sync" android:title="@string/str_manual_call_sync"  />-->
+
+    <item android:id="@+id/nav_remote_support" android:title="@string/str_remote_support" />
+    <item android:id="@+id/nav_logout" android:title="@string/str_logout" />
+</menu>

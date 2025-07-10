@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_sheet_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Status"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true" />
+
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/ivClose"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_close_24"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/status_open"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OPEN"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/status_overdue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OVERDUE"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/status_closed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLOSED"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/status_approved"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="APPROVED"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/status_rejected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REJECTED"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/status_transferred"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TRANSFERRED"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true" />
+</LinearLayout>

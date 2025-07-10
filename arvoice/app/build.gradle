@@ -1,0 +1,75 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services' // ✅ Place this in plugins block, not with apply
+    id 'com.google.firebase.crashlytics'
+}
+
+android {
+    namespace 'com.arvoice'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.arvoice"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        // ✅ Updated for AndroidX test runner
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dataBinding {
+        enabled true
+    }
+
+    viewBinding {
+        enabled true
+    }
+
+}
+
+dependencies {
+    implementation 'com.google.firebase:firebase-crashlytics:18.4.1'  // ✅ Safe version
+    implementation 'com.google.firebase:firebase-analytics:21.5.0'    // Still OK
+    implementation 'com.google.firebase:firebase-messaging:23.4.1'    // OK too
+
+    // Jetpack
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    // Retrofit & OkHttp
+    implementation 'com.squareup.okhttp3:okhttp:4.9.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.3.0'
+
+    // UI
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'io.github.chaosleung:pinview:1.4.4'
+
+    // Logging
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+
+    // Testing
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAF6FF">
+
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:visibility="visible"
+        android:scaleType="centerCrop"
+        android:src="@drawable/city_bg" />
+
+    <!-- Car image -->
+
+
+    <!-- Rounded white card -->
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/loginCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="230dp"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_white_bg"
+        android:padding="20dp">
+
+        <!-- Email Field -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AR Voice"
+            android:textSize="32sp"
+            android:textColor="#000000"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="12dp"/>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dim_50"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_bg"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/ivLockEmail"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/baseline_email_24"
+                app:tint="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/ivLockEmail"
+                android:background="@drawable/edittext_bg"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+        <!-- Password Field -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_bg"
+            android:layout_marginTop="@dimen/dim_24"
+            android:layout_marginBottom="20dp">
+
+            <!-- Prefix Icon -->
+            <ImageView
+                android:id="@+id/ivLockIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/baseline_lock_24"
+                app:tint="@color/colorPrimary" />
+
+            <!-- EditText -->
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/ivLockIcon"
+                android:layout_toStartOf="@id/ivTogglePassword"
+                android:background="@drawable/edittext_bg"
+                android:inputType="textPassword"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:hint="Password"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <!-- Password Toggle -->
+            <ImageView
+                android:id="@+id/ivTogglePassword"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/eye_off"
+                app:tint="#000000" />
+        </RelativeLayout>
+
+
+        <!-- Sign In Button -->
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/et_password"
+            android:layout_centerHorizontal="true"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/dim_16"
+            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/round_button" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/carImage"
+        android:layout_width="@dimen/dim_150"
+        android:layout_height="@dimen/dim_150"
+        android:scaleType="fitXY"
+        android:layout_marginTop="140dp"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/car"
+        android:layout_marginStart="5dp" />
+
+
+</RelativeLayout>

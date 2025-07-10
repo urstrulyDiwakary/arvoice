@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--    <LinearLayout-->
+<!--        android:visibility="gone"-->
+<!--        android:id="@+id/llContentEdit"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:visibility="visible"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            app:cardCornerRadius="12dp"-->
+<!--            app:cardElevation="4dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="16dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="LEAD INFO"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:layout_marginTop="@dimen/dim_16"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:paddingBottom="12dp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Contact Name"-->
+<!--                    android:textSize="14sp" />-->
+
+<!--                <EditText-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:inputType="textPersonName"-->
+<!--                    android:paddingHorizontal="@dimen/dim_16"-->
+<!--                    android:paddingBottom="@dimen/dim_16"-->
+<!--                    android:background="?android:attr/editTextBackground" />-->
+
+
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Mobile Number"-->
+<!--                    android:layout_marginTop="@dimen/dim_8"-->
+<!--                    android:textSize="14sp" />-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:paddingBottom="12dp">-->
+
+
+
+<!--                    <EditText-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textColor="#000000"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:inputType="textPersonName"-->
+<!--                        android:paddingHorizontal="@dimen/dim_16"-->
+<!--                        android:paddingBottom="@dimen/dim_16"-->
+<!--                        android:background="?android:attr/editTextBackground" />-->
+
+
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="36dp"-->
+<!--                        android:layout_height="36dp"-->
+<!--                        android:layout_marginEnd="8dp"-->
+<!--                        android:background="@drawable/circle_button_bg"-->
+<!--                        android:padding="8dp"-->
+<!--                        android:src="@drawable/call"-->
+<!--                        app:tint="@color/white" />-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="36dp"-->
+<!--                        android:layout_height="36dp"-->
+<!--                        android:layout_marginEnd="8dp"-->
+<!--                        android:background="@drawable/circle_button_bg"-->
+<!--                        android:padding="8dp"-->
+<!--                        android:src="@drawable/whatsapp"-->
+<!--                        app:tint="@color/white" />-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="36dp"-->
+<!--                        android:layout_height="36dp"-->
+<!--                        android:background="@drawable/circle_button_bg"-->
+<!--                        android:padding="8dp"-->
+<!--                        android:src="@drawable/baseline_message_24"-->
+<!--                        app:tint="@color/white" />-->
+<!--                </LinearLayout>-->
+
+<!--                &lt;!&ndash; Repeat similar blocks for: Lead Owner, Alternate Number, Email, Revenue, etc. &ndash;&gt;-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:gravity="center_vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="@dimen/dim_8"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Lead Owner"-->
+<!--                        android:textSize="14sp" />-->
+
+<!--                    <EditText-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textColor="#000000"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:inputType="textPersonName"-->
+<!--                        android:paddingHorizontal="@dimen/dim_16"-->
+<!--                        android:paddingBottom="@dimen/dim_16"-->
+<!--                        android:background="?android:attr/editTextBackground" />-->
+
+
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:gravity="center_vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="@dimen/dim_8"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Alternate Number"-->
+<!--                        android:textSize="14sp" />-->
+
+<!--                    <EditText-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textColor="#000000"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:inputType="textPersonName"-->
+<!--                        android:paddingHorizontal="@dimen/dim_16"-->
+<!--                        android:paddingBottom="@dimen/dim_16"-->
+<!--                        android:background="?android:attr/editTextBackground" />-->
+
+
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:gravity="center_vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="@dimen/dim_8"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Email Address"-->
+<!--                        android:textSize="14sp" />-->
+
+<!--                    <EditText-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textColor="#000000"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:inputType="textPersonName"-->
+<!--                        android:paddingHorizontal="@dimen/dim_16"-->
+<!--                        android:paddingBottom="@dimen/dim_16"-->
+<!--                        android:background="?android:attr/editTextBackground" />-->
+
+
+
+
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:gravity="center_vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="@dimen/dim_8"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Expected Revenue"-->
+<!--                        android:textSize="14sp" />-->
+
+<!--                    <EditText-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textColor="#000000"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:inputType="textPersonName"-->
+<!--                        android:paddingHorizontal="@dimen/dim_16"-->
+<!--                        android:paddingBottom="@dimen/dim_16"-->
+<!--                        android:background="?android:attr/editTextBackground" />-->
+
+
+
+
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:gravity="center_vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="@dimen/dim_8"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Expected Closing Date"-->
+<!--                        android:textSize="14sp" />-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/expected_revenue"-->
+<!--                        android:focusable="false"-->
+<!--                        android:focusableInTouchMode="false"-->
+<!--                        android:drawableTint="@color/colorPrimary"-->
+<!--                        android:drawableEnd="@drawable/baseline_calendar_month_24"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textColor="#000000"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:inputType="textPersonName"-->
+<!--                        android:paddingHorizontal="@dimen/dim_16"-->
+<!--                        android:paddingBottom="@dimen/dim_16"-->
+<!--                        android:background="?android:attr/editTextBackground" />-->
+
+
+
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:gravity="center_vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="@dimen/dim_8"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Lead Stage"-->
+<!--                        android:textSize="14sp" />-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/etLeadStage"-->
+<!--                        android:focusable="false"-->
+<!--                        android:focusableInTouchMode="false"-->
+<!--                        android:drawableTint="@color/colorPrimary"-->
+<!--                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textColor="#000000"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:inputType="textPersonName"-->
+<!--                        android:paddingHorizontal="@dimen/dim_16"-->
+<!--                        android:paddingBottom="@dimen/dim_16"-->
+<!--                        android:background="?android:attr/editTextBackground" />-->
+
+
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:gravity="center_vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="@dimen/dim_8"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Category"-->
+<!--                        android:textSize="14sp" />-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/etCategory"-->
+<!--                        android:focusableInTouchMode="false"-->
+<!--                        android:focusable="false"-->
+<!--                        android:drawableTint="@color/colorPrimary"-->
+<!--                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textColor="#000000"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:inputType="textPersonName"-->
+<!--                        android:paddingHorizontal="@dimen/dim_16"-->
+<!--                        android:paddingBottom="@dimen/dim_16"-->
+<!--                        android:background="?android:attr/editTextBackground" />-->
+
+
+
+
+<!--                </LinearLayout>-->
+
+
+<!--            </LinearLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            app:cardCornerRadius="12dp"-->
+<!--            app:cardElevation="4dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="16dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Next Follow-Up Info"-->
+<!--                    android:textAllCaps="true"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:paddingBottom="12dp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_marginTop="@dimen/dim_16"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Next Follow-up On"-->
+<!--                    android:textSize="14sp" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/etFoolowUp"-->
+<!--                    android:drawableEnd="@drawable/baseline_calendar_month_24"-->
+<!--                    android:drawableTint="@color/colorPrimary"-->
+<!--                    android:focusableInTouchMode="false"-->
+<!--                    android:focusable="false"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:inputType="textPersonName"-->
+<!--                    android:paddingHorizontal="@dimen/dim_16"-->
+<!--                    android:paddingBottom="@dimen/dim_16"-->
+<!--                    android:background="?android:attr/editTextBackground" />-->
+
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:paddingBottom="12dp">-->
+
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="@dimen/dim_8"-->
+<!--                        android:text="Next Follow-up Notes"-->
+<!--                        android:textSize="14sp" />-->
+
+<!--                    <EditText-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textColor="#000000"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:inputType="textPersonName"-->
+<!--                        android:paddingHorizontal="@dimen/dim_16"-->
+<!--                        android:paddingBottom="@dimen/dim_16"-->
+<!--                        android:background="?android:attr/editTextBackground" />-->
+
+
+
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:visibility="visible"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            app:cardCornerRadius="12dp"-->
+<!--            app:cardElevation="4dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="16dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Description"-->
+<!--                    android:textAllCaps="true"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:paddingBottom="12dp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:text="Update few words about this lead"-->
+<!--                    android:textSize="14sp" />-->
+
+<!--                <EditText-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:inputType="textPersonName"-->
+<!--                    android:paddingHorizontal="@dimen/dim_16"-->
+<!--                    android:paddingBottom="@dimen/dim_16"-->
+<!--                    android:background="?android:attr/editTextBackground" />-->
+
+
+
+
+<!--            </LinearLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:visibility="visible"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            app:cardCornerRadius="12dp"-->
+<!--            app:cardElevation="4dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="16dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Source Info"-->
+<!--                    android:textAllCaps="true"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:paddingBottom="12dp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="16dp"-->
+<!--                    android:text="Lead Source"-->
+<!--                    android:textSize="14sp" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/etLeadSource"-->
+<!--                    android:focusableInTouchMode="false"-->
+<!--                    android:focusable="false"-->
+<!--                    android:drawableTint="@color/colorPrimary"-->
+<!--                    android:drawableEnd="@drawable/baseline_arrow_drop_down_24"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:inputType="textPersonName"-->
+<!--                    android:paddingHorizontal="@dimen/dim_16"-->
+<!--                    android:paddingBottom="@dimen/dim_16"-->
+<!--                    android:background="?android:attr/editTextBackground" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:text="Campaign Name"-->
+<!--                    android:textSize="14sp" />-->
+
+<!--                <EditText-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:inputType="textPersonName"-->
+<!--                    android:paddingHorizontal="@dimen/dim_16"-->
+<!--                    android:paddingBottom="@dimen/dim_16"-->
+<!--                    android:background="?android:attr/editTextBackground" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:text="Campaign Term"-->
+<!--                    android:textSize="14sp" />-->
+
+<!--                <EditText-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:inputType="textPersonName"-->
+<!--                    android:paddingHorizontal="@dimen/dim_16"-->
+<!--                    android:paddingBottom="@dimen/dim_16"-->
+<!--                    android:background="?android:attr/editTextBackground" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:text="Campaign Content"-->
+<!--                    android:textSize="14sp" />-->
+
+<!--                <EditText-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:inputType="textPersonName"-->
+<!--                    android:paddingHorizontal="@dimen/dim_16"-->
+<!--                    android:paddingBottom="@dimen/dim_16"-->
+<!--                    android:background="?android:attr/editTextBackground" />-->
+
+
+<!--            </LinearLayout>-->
+
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            app:cardCornerRadius="12dp"-->
+<!--            app:cardElevation="4dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="16dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Last Call Info"-->
+<!--                    android:textAllCaps="true"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:paddingBottom="12dp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:text="Caller Name"-->
+<!--                    android:textSize="14sp" />-->
+
+<!--                <EditText-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:inputType="textPersonName"-->
+<!--                    android:paddingHorizontal="@dimen/dim_16"-->
+<!--                    android:paddingBottom="@dimen/dim_16"-->
+<!--                    android:background="?android:attr/editTextBackground" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:text="Last Call Time"-->
+<!--                    android:textSize="14sp" />-->
+
+<!--                <EditText-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:inputType="textPersonName"-->
+<!--                    android:paddingHorizontal="@dimen/dim_16"-->
+<!--                    android:paddingBottom="@dimen/dim_16"-->
+<!--                    android:background="?android:attr/editTextBackground" />-->
+
+
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:text="Call Duration"-->
+<!--                    android:textSize="14sp" />-->
+
+<!--                <EditText-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:inputType="textPersonName"-->
+<!--                    android:paddingHorizontal="@dimen/dim_16"-->
+<!--                    android:paddingBottom="@dimen/dim_16"-->
+<!--                    android:background="?android:attr/editTextBackground" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:text="Last Call Status"-->
+<!--                    android:textSize="14sp" />-->
+
+<!--                <EditText-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:inputType="textPersonName"-->
+<!--                    android:paddingHorizontal="@dimen/dim_16"-->
+<!--                    android:paddingBottom="@dimen/dim_16"-->
+<!--                    android:background="?android:attr/editTextBackground" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:text="Reason for Not Connected"-->
+<!--                    android:textSize="14sp" />-->
+
+<!--                <EditText-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:inputType="textPersonName"-->
+<!--                    android:paddingHorizontal="@dimen/dim_16"-->
+<!--                    android:paddingBottom="@dimen/dim_16"-->
+<!--                    android:background="?android:attr/editTextBackground" />-->
+
+
+<!--            </LinearLayout>-->
+
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--    </LinearLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
